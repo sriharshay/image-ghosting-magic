@@ -4,4 +4,4 @@ Simple page with image to demonstrate image fitler rules like blur, hue and inve
 
 ## Live site
 
-[Run the example live](https://image-ghosting-magic.github.io//).
+[Run the example live](https://sriharshay.github.io//).
