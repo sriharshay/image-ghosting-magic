@@ -37,8 +37,13 @@ form button {
   display: inline;
 }
 
-button {
-  display: block;
+div.btn {
+  display: flex;
+  padding: 0 2em 0 2em;
+  justify-content: space-around;
+}
+
+div.btn button {
   padding: 1em;
   word-spacing: 0.1em;
   letter-spacing: 0.1em;
