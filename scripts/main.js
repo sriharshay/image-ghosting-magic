@@ -3,6 +3,7 @@ const disappearBtn = document.querySelector('button.image-disappear');
 const appearBtn = document.querySelector('button.image-appear');
 const changeColorBtn = document.querySelector('button.image-change-color');
 const xRayBtn = document.querySelector('button.image-invert');
+const resetBtn = document.querySelector('button.image-reset');
 
 let dollImg = document.querySelector('img');
 const blurCounter = 5;
@@ -48,6 +49,11 @@ function xRayImage() {
   }
 }
 
+// Reset all image inline styles
+function resetImageInlineStyles() {
+  dollImg.removeAttribute('style');
+}
+
 //Event listeners
 disappearBtn.onclick = function () {
   blurImage();
@@ -60,4 +66,7 @@ changeColorBtn.onclick = function () {
 }
 xRayBtn.onclick = function () {
   xRayImage();
+}
+resetBtn.onclick = function () {
+  resetImageInlineStyles();
 }
